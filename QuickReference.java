@@ -74,5 +74,62 @@
 // public int add(int a, int b) { return a+b; }
 // public int add(int a, int b, int c) { return a+b+c; }
 
+// ==== ERROR HANDLING ====
+// try {
+//   int num = Integer.parseInt(str);
+// } catch (NumberFormatException e) {
+//   System.out.println("Invalid number");
+// }
+// try {
+//   FileWriter fw = new FileWriter("file.txt");
+// } catch (IOException e) {
+//   System.out.println("File error: " + e.getMessage());
+// }
+// if (index >= 0 && index < arr.length) { arr[index] = val; }
+// if (obj != null) { obj.method(); }
+
+// ==== ABSTRACT CLASS ====
+// public abstract class Shape {
+//   protected String name;
+//   public abstract double getArea();
+//   public void print() { System.out.println(name); }
+// }
+// public class Circle extends Shape {
+//   @Override public double getArea() { return Math.PI * r * r; }
+// }
+
+// ==== INTERFACE ====
+// public interface Drawable {
+//   void draw();
+//   int MAX_SIZE = 100;
+// }
+// public class Box implements Drawable {
+//   @Override public void draw() { }
+// }
+
+// ==== TYPE CHECKING ====
+// if (obj instanceof Circle) { Circle c = (Circle) obj; }
+
+// ==== WRAPPER CLASSES ====
+// Integer num = 42;  // autoboxing
+// int n = num;       // unboxing
+// int x = Integer.parseInt("123");
+// Integer a = 1000, b = 1000;
+// a.equals(b)  // true
+// a == b       // false (for values > 127)
+
+// ==== 2D ARRAY ====
+// int[][] grid = new int[3][4];
+// int val = grid[row][col];
+// for (int r=0; r<grid.length; r++) {
+//   for (int c=0; c<grid[r].length; c++) { }
+// }
+
+// ==== FINAL ====
+// public static final double PI = 3.14159;
+// final String id;  // set in constructor, never change
+// final class CannotExtend { }
+// final void cannotOverride() { }
+
 // ==== MAIN ====
 // public static void main(String[] args) { }

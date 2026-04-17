@@ -4,6 +4,7 @@
 // HOW: Copy the Scanner block, change variable names as needed
 
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class LoginMain {
     public static void main(String[] args) {
@@ -19,6 +20,16 @@ public class LoginMain {
         
         System.out.print("Enter password: ");
         String password = input.nextLine();
+        
+        // ==== ERROR TRAPPING: NULL CHECK ====
+        // WHAT: Prevent null pointer exceptions
+        // WHEN: Data might be null
+        // HOW: if (variable != null) before using
+        
+        if (username == null || password == null) {
+            System.out.println("ERROR: Input cannot be null!");
+            return;
+        }
         
         // ==== BOOLEAN VALIDATION FLAGS ====
         // WHAT: Stores validation results as true/false
